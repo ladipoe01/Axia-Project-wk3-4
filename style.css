@@ -1,0 +1,94 @@
+body {
+    font-family: 'Arial', sans-serif; /* Change to any font you like */
+}
+
+.job-listings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Job Card */
+.job {
+    display: flex;
+    align-items: center;
+    background: #f4faff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between; /* Ensures left-right separation */
+}
+
+/* Company Logo */
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Job Content (Holds Left + Right Info) */
+.job-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    transition: b;
+}
+
+.job:hover{
+    transition: 0.5s ease;
+    background-color: rgb(228, 228, 236);
+}
+/* Job Info (Left Side) */
+.job-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Job Title */
+.job-title {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Company Name */
+.company-name {
+    margin: 5px 0;
+    color: #007bff; /* Bluish color */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between company name and "NEW" label */
+}
+
+/* "NEW" Indicator */
+.new-badge {
+    background-color: #ff4757; /* Red background */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 5px; /* Slightly rounded rectangle */
+    text-transform: uppercase;
+}
+
+/* Adjusted Right-Side Tags (Curvy but Rectangular) */
+.tags span {
+    background-color: #d0e8f2;
+    padding: 6px 14px;
+    border-radius: 8px; /* Slightly curvy, but still rectangular */
+    font-size: 0.85em;
+    color: #333;
+    white-space: nowrap; /* Prevents line breaks */
+}
+
+/* Job Tags (Right Side) */
+.tags {
+    display: flex;
+    gap: 10px;
+}
